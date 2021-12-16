@@ -11,6 +11,7 @@ async function transfer() {
     const transferTxId = await tools.transfer(amt, addr, "KOI");
     // number of token, receiver address, type of token(KOI or AR)
     console.log("Your transaction is " + transferTxId);
+    document.getElementById("txnID").innerHTML = "Your transaction is " + transferTxId;
     console.log('hello3');
 
 }
